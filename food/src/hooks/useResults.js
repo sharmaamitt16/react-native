@@ -14,10 +14,8 @@ export default() => {
           location: 'san jose'
         }
       });
-      console.log('Hi' + response);
       setResults(response.data.businesses);
     } catch(err) {
-      console.log(err);
       setErrorMsg('Something went wrong.');
     }
   };
